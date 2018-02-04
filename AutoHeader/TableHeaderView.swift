@@ -44,7 +44,7 @@ class TableHeaderView: UIView {
         subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: spacing).activate()
         subtitleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: spacing).activate()
         subtitleLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -spacing).setPriority(.required - 1).activate()
-        subtitleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).setPriority(.required - 1).activate()
+        subtitleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -spacing).setPriority(.required - 1).activate()
     }
     
     required init?(coder aDecoder: NSCoder) {
