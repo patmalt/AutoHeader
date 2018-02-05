@@ -21,10 +21,12 @@ class TableHeaderView: UIView {
         
         titleLabel.text = "This is my title, isn't it great"
         titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        titleLabel.textAlignment = .center
         
         subtitleLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam purus, lacinia non elit sed, hendrerit iaculis libero. Etiam bibendum eleifend tortor eget aliquam. Morbi nibh sapien, maximus et facilisis ac, molestie et sapien. Phasellus in congue tortor. Pellentesque lacinia nec tortor quis porta. Duis sodales turpis justo, nec ullamcorper lectus vehicula sit amet. Nullam auctor venenatis lorem eu ultrices. Vivamus facilisis nulla in turpis vestibulum, ac placerat lorem euismod."
         subtitleLabel.numberOfLines = 0
         subtitleLabel.font = UIFont.systemFont(ofSize: 15)
+        subtitleLabel.textAlignment = .center
         
         addSubview(animatingView)
         addSubview(titleLabel)
